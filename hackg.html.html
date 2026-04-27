@@ -1,0 +1,2989 @@
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;!DOCTYPE html&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;html lang="en"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta charset="UTF-8"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;title&gt;EduHub - Student Support Platform&lt;/title&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; * {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-sizing: border-box;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; body {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; min-height: 100vh;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 1400px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 0 auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(255, 255, 255, 0.95);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px 40px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .logo {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 28px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; -webkit-background-clip: text;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; -webkit-text-fill-color: transparent;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background-clip: text;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; nav {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; nav a {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-decoration: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 500;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: color 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; nav a:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #764ba2;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .main-content {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: 2fr 1fr;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .dashboard-card {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(255, 255, 255, 0.95);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .card-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 24px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stats-grid {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: repeat(2, 1fr);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-box {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-number {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 32px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 5px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-label {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 14px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; opacity: 0.9;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .upcoming-events {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .event-item {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #f8f9ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-left: 4px solid #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .event-time {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 12px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .event-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 5px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .chatbot-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(255, 255, 255, 0.95);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 600px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-direction: column;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .chat-messages {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex: 1;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow-y: auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #f8f9ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .message {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 12px 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 12px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 80%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; animation: fadeIn 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @keyframes fadeIn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; from { opacity: 0; transform: translateY(10px); }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; to { opacity: 1; transform: translateY(0); }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .bot-message {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-right: auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .user-message {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #e0e7ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #333;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-left: auto;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .chat-suggestions {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-wrap: wrap;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #f8f9ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .suggestion-chip {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 8px 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 13px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; white-space: nowrap;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .suggestion-chip:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(-2px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .chat-input-container {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .chat-input {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex: 1;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 12px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 14px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; outline: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .send-btn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 12px 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: transform 0.2s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .send-btn:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: scale(1.05);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resources-grid {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resource-card {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(255, 255, 255, 0.95);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 25px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: transform 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resource-card:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: translateY(-5px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resource-icon {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 48px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resource-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 18px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .resource-desc {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 14px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #666;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .notification-badge {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: fixed;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; right: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ff4757;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; box-shadow: 0 4px 12px rgba(255, 71, 87, 0.4);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; animation: slideIn 0.5s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: 1000;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @keyframes slideIn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; from { transform: translateX(400px); }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; to { transform: translateX(0); }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .quick-actions {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; flex-wrap: wrap;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .action-btn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 2px solid #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 10px 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: 600;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .action-btn:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .progress-bar {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #e0e7ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 4px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .progress-fill {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 4px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: width 0.5s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .map-modal {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: fixed;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; top: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; left: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(0, 0, 0, 0.8);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: 2000;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .map-modal.active {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .map-content {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 90%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 1000px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 80%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .map-header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .map-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 24px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .close-map {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ff4757;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 8px 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .close-map:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ff3838;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; #map {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: calc(100% - 60px);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-modal {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: fixed;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; top: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; left: 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: rgba(0, 0, 0, 0.8);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; z-index: 2000;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-modal.active {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-content {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 90%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; max-width: 500px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-header {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; align-items: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-bottom: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-title {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 24px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .close-hydration {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #ff4757;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 8px 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-tracker {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; text-align: center;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 20px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .water-goal {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 48px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 20px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .water-glasses {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: grid;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: repeat(4, 1fr);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; gap: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 20px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .glass {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 60px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; height: 80px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: 3px solid #667eea;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: all 0.3s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: relative;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; overflow: hidden;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .glass.filled {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-color: #00f2fe;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .glass:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: scale(1.1);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .hydration-stats {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: #f8f9ff;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 10px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 20px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .stat-row {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; display: flex;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; justify-content: space-between;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin: 10px 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 14px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .add-water-btn {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; color: white;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border: none;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; padding: 15px 30px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; border-radius: 8px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; cursor: pointer;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-weight: bold;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; font-size: 16px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; width: 100%;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; margin-top: 15px;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transition: transform 0.2s;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .add-water-btn:hover {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; transform: scale(1.05);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; @media (max-width: 1024px) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; .main-content {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; grid-template-columns: 1fr;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/style&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/head&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;body&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;div class="container"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;header&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="logo"&gt;<span style="font-family:'Segoe UI Emoji'">🎓</span> EduHub&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;nav&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#dashboard"&gt;Dashboard&lt;/a&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#resources"&gt;Resources&lt;/a&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#support"&gt;Support&lt;/a&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;a href="#profile"&gt;Profile&lt;/a&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/nav&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/header&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="main-content"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="dashboard-card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;<span style="font-family:'Segoe UI Emoji'">📊</span> Your Dashboard&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stats-grid"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-box"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-number" id="attendanceRate"&gt;94%&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Attendance Rate&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-box"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-number" id="currentStreak"&gt;12&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Day Streak <span style="font-family:'Segoe UI Emoji'">🔥</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-box"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-number" id="assignmentsCompleted"&gt;8/10&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Assignments&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-box"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-number" id="gpa"&gt;3.8&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-label"&gt;Current GPA&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h3 style="margin-bottom: 15px; color: #667eea;"&gt;<span style="font-family:'Segoe UI Emoji'">📅</span> Upcoming Events&lt;/h3&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="upcoming-events"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-item"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-time"&gt;Today, 2:00 PM&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-title"&gt;Data Structures - Lecture&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-bar"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-fill" style="width: 70%"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-item"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-time"&gt;Tomorrow, 10:00 AM&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-title"&gt;Career Counseling Session&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-bar"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-fill" style="width: 30%"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-item"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-time"&gt;Nov 5, 3:00 PM&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="event-title"&gt;Web Development Assignment Due&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-bar"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="progress-fill" style="width: 85%"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="quick-actions"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="action-btn" onclick="showNotification('Study session scheduled for 4 PM today!')"&gt;<span style="font-family:'Segoe UI Emoji'">📚</span> Schedule Study&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="action-btn" onclick="showNotification('Appointment booked successfully!')"&gt;<span style="font-family:'Segoe UI Emoji'">📅</span> Book Appointment&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="action-btn" onclick="showNotification('Resource library opened!')"&gt;<span style="font-family:'Segoe UI Emoji'">📖</span> Access Resources&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="action-btn" onclick="openHydrationTracker()"&gt;<span style="font-family:'Segoe UI Emoji'">💧</span> Hydration Tracker&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="action-btn" onclick="openMap()"&gt;<span style="font-family:'Segoe UI Emoji'">🗺️</span> Campus Map&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="chatbot-container"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;<span style="font-family:'Segoe UI Emoji'">💬</span> AI Assistant&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="chat-messages" id="chatMessages"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="message bot-message"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Hello! I'm your EduHub AI assistant. I'm here 24/7 to help you with academic support, mental health resources, career guidance, and more. How can I assist you today?
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="chat-suggestions" id="chatSuggestions"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('next class')"&gt;<span style="font-family:'Segoe UI Emoji'">📚</span> Next Class&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('directions')"&gt;<span style="font-family:'Segoe UI Emoji'">🗺️</span> Directions&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('assignment')"&gt;<span style="font-family:'Segoe UI Emoji'">📝</span> Assignments&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('mental health')"&gt;<span style="font-family:'Segoe UI Emoji'">🧠</span> Mental Health&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('career')"&gt;<span style="font-family:'Segoe UI Emoji'">💼</span> Career Help&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('scholarship')"&gt;<span style="font-family:'Segoe UI Emoji'">💰</span> Scholarships&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('gpa')"&gt;<span style="font-family:'Segoe UI Emoji'">📊</span> Check GPA&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('book appointment')"&gt;<span style="font-family:'Segoe UI Emoji'">📅</span> Appointments&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('library')"&gt;<span style="font-family:'Segoe UI Emoji'">📖</span> Library&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="suggestion-chip" onclick="handleSuggestion('financial aid')"&gt;<span style="font-family:'Segoe UI Emoji'">💵</span> Financial Aid&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="chat-input-container"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." onkeypress="handleKeyPress(event)"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="send-btn" onclick="sendMessage()"&gt;Send&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="dashboard-card"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;h2 class="card-title"&gt;<span style="font-family:'Segoe UI Emoji'">🎯</span> Support Services&lt;/h2&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resources-grid"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('academic')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">📚</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Academic Support&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Tutoring, study groups, and academic advising&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('mental')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">🧠</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Mental Health&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Counseling services and wellness resources&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('career')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">💼</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Career Services&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Job placement and career counseling&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('financial')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">💰</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Financial Aid&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Scholarships and financial assistance&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('campus')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">🗺️</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Campus Navigation&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Find your way around campus easily&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-card" onclick="openResource('community')"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-icon"&gt;<span style="font-family:'Segoe UI Emoji'">👥</span>&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-title"&gt;Community Connect&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="resource-desc"&gt;Connect with students sharing similar goals&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;div class="map-modal" id="mapModal"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="map-content"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="map-header"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="map-title"&gt;<span style="font-family:'Segoe UI Emoji'">🗺️</span> Campus Navigation&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="close-map" onclick="closeMap()"&gt;<span style="font-family:'Segoe UI Symbol'">✕</span> Close&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div id="map"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;div class="hydration-modal" id="hydrationModal"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="hydration-content"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="hydration-header"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="hydration-title"&gt;<span style="font-family:'Segoe UI Emoji'">💧</span> Hydration Tracker&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="close-hydration" onclick="closeHydration()"&gt;<span style="font-family:'Segoe UI Symbol'">✕</span> Close&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="hydration-tracker"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div style="font-size: 18px; color: #666; margin-bottom: 10px;"&gt;Daily Goal: 8 glasses (2L)&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="water-goal"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="waterCount"&gt;0&lt;/span&gt; / 8 <span style="font-family:'Segoe UI Emoji'">💧</span>
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="water-glasses" id="waterGlasses"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(0)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(1)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(2)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(3)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(4)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(5)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(6)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="glass" onclick="toggleGlass(7)"&gt;&lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;button class="add-water-btn" onclick="addWater()"&gt;+ Add One Glass&lt;/button&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="hydration-stats"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-row"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span&gt;&lt;strong&gt;Today's Progress:&lt;/strong&gt;&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="progressPercent"&gt;0%&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-row"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span&gt;&lt;strong&gt;Current Streak:&lt;/strong&gt;&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="hydrationStreak"&gt;3 days <span style="font-family:'Segoe UI Emoji'">🔥</span>&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-row"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span&gt;&lt;strong&gt;Last Glass:&lt;/strong&gt;&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="lastGlass"&gt;--:--&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;div class="stat-row"&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span&gt;&lt;strong&gt;Next Reminder:&lt;/strong&gt;&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;span id="nextReminder"&gt;In 2 hours&lt;/span&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/div&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap" async defer&gt;&lt;/script&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;script&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const chatResponses = {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'hello': 'Hello! How can I help you today?',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'hi': 'Hi there! What would you like to know?',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'class': 'Your next class is Data Structures at 2:00 PM in Room 304. Would you like directions?',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'next class': 'Your next class is Data Structures at 2:00 PM in Room 304. Would you like directions?',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'yes': 'Great! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span> Click "Campus Map" button to see it on Google Maps!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'yeah': 'Perfect! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'yup': 'Sure thing! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'sure': 'Absolutely! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'ok': 'Got it! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'okay': 'Perfect! Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'directions': 'Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'navigate': 'Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'how do i get': 'Opening navigation... From your current location (Main Building), take the east corridor, go up to Floor 3, turn right. Room 304 is the second door on your left. ETA: 5 minutes walking. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'where is': 'I can help you navigate! Your next class (Data Structures) is in Room 304. From Main Building: take east corridor → Floor 3 → turn right → second door on left.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'room 304': 'Room 304 is on Floor 3. From Main Building: take east corridor → go up to Floor 3 → turn right → second door on left. Walking time: approximately 5 minutes. <span style="font-family:'Segoe UI Emoji'">🗺️</span>',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'map': 'Click the Campus Map button in Quick Actions to see the interactive campus map with all locations marked!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'assignment': 'You have 2 pending assignments: Web Development (due Nov 5) and Database Systems (due Nov 8).',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'mental health': 'We offer free counseling services. You can book an appointment through the Mental Health Resources section. We also have virtual support groups every Wednesday at 5 PM.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'counseling': 'Our counseling services are available Monday-Friday, 9 AM - 5 PM. You can book an appointment by clicking the Book Appointment button or calling ext. 2345.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'scholarship': 'We have several scholarship opportunities available. Check the Financial Aid section for merit-based and need-based scholarships. The deadline for spring scholarships is December 1st.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'career': 'Our career services offer resume reviews, mock interviews, and job placement assistance. We have partnerships with over 200+ companies for internships and placements.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'gpa': 'Your current GPA is 3.8. Great job! Keep up the good work!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'stress': "I understand you are feeling stressed. Remember to take breaks, stay hydrated, and reach out to our mental health support services. Would you like me to schedule a counseling session?",
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'library': 'The Library is on Floor 2 of the Academic Block. From Main Building: take west corridor, enter Academic Block, stairs to Floor 2. Open 8 AM - 10 PM.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'cafeteria': 'The Cafeteria is on Ground Floor of Student Center. From Main Building: exit main entrance, turn left, 2 minute walk. Meal times: Breakfast 7-9 AM, Lunch 12-2 PM, Dinner 6-8 PM.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'book appointment': 'I can help you book an appointment! What type do you need? Academic Advising, Mental Health Counseling, Career Counseling, or Financial Aid Consultation. Just let me know!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'financial aid': 'Financial Aid services: We offer grants, loans, and work-study programs. Our office is open Mon-Fri 9 AM - 4 PM. You can also apply online through the student portal.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'help': "I can assist you with class schedules, navigation, assignments, mental health resources, career counseling, financial aid, and much more! Just ask!"
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; };
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let map;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let markers = [];
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let waterCount = 0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let hydrationReminders = true;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let lastWaterTime = null;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let hydrationStreak = 3;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function openHydrationTracker() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('hydrationModal').classList.add('active');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; updateHydrationDisplay();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function closeHydration() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('hydrationModal').classList.remove('active');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function toggleGlass(index) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const glasses = document.querySelectorAll('.glass');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (index &lt; waterCount) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; for (let i = waterCount - 1; i &gt;= index; i--) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; glasses[i].classList.remove('filled');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; waterCount = index;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; for (let i = waterCount; i &lt;= index; i++) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; glasses[i].classList.add('filled');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; waterCount = index + 1;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; updateHydrationDisplay();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; lastWaterTime = new Date();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function addWater() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (waterCount &lt; 8) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const glasses = document.querySelectorAll('.glass');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; glasses[waterCount].classList.add('filled');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; waterCount++;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; updateHydrationDisplay();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; lastWaterTime = new Date();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (waterCount === 8) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification('<span style="font-family:'Segoe UI Emoji'">🎉</span> Awesome! You reached your daily hydration goal!');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; hydrationStreak++;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification('Great job! ' + waterCount + ' glasses done. Keep it up! <span style="font-family:'Segoe UI Emoji'">💧</span>');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification('You already completed your daily goal! <span style="font-family:'Segoe UI Emoji'">🎉</span>');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function updateHydrationDisplay() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('waterCount').textContent = waterCount;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const percent = Math.round((waterCount / 8) * 100);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('progressPercent').textContent = percent + '%';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('hydrationStreak').textContent = hydrationStreak + ' days <span style="font-family:'Segoe UI Emoji'">🔥</span>';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (lastWaterTime) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const hours = lastWaterTime.getHours();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const minutes = lastWaterTime.getMinutes();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('lastGlass').textContent = 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; (hours &lt; 10 ? '0' + hours : hours) + ':' + 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; (minutes &lt; 10 ? '0' + minutes : minutes);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function sendHydrationReminder() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (hydrationReminders &amp;&amp; waterCount &lt; 8) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const now = new Date();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const hour = now.getHours();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (hour &gt;= 8 &amp;&amp; hour &lt;= 22) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification('<span style="font-family:'Segoe UI Emoji'">💧</span> Time to hydrate! Drink a glass of water to stay healthy and focused!');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setInterval(sendHydrationReminder, 7200000);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setInterval(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const remaining = 8 - waterCount;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (remaining &gt; 0) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const hoursLeft = Math.max(1, Math.floor(remaining / 2));
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('nextReminder').textContent = 'In ' + hoursLeft + ' hours';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; } else {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('nextReminder').textContent = 'Goal completed! <span style="font-family:'Segoe UI Emoji'">🎉</span>';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 60000);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function handleSuggestion(query) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const chatMessages = document.getElementById('chatMessages');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const userMsg = document.createElement('div');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; userMsg.className = 'message user-message';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; userMsg.textContent = query;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.appendChild(userMsg);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.scrollTop = chatMessages.scrollHeight;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setTimeout(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const botMsg = document.createElement('div');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; botMsg.className = 'message bot-message';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let resp = "I am here to help! Try asking about classes, assignments, mental health, career services, or scholarships.";
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const lowerQ = query.toLowerCase();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; for (let key in chatResponses) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (lowerQ.includes(key)) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; resp = chatResponses[key];
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; break;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; botMsg.textContent = resp;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.appendChild(botMsg);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.scrollTop = chatMessages.scrollHeight;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 800);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function sendMessage() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const input = document.getElementById('chatInput');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const msg = input.value.trim();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (msg === '') return;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const chatMessages = document.getElementById('chatMessages');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const userMsg = document.createElement('div');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; userMsg.className = 'message user-message';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; userMsg.textContent = msg;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.appendChild(userMsg);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; input.value = '';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setTimeout(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const botMsg = document.createElement('div');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; botMsg.className = 'message bot-message';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; let resp = "I am here to help! Try asking about classes, assignments, mental health, career services, or scholarships.";
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const lowerMsg = msg.toLowerCase();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; for (let key in chatResponses) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (lowerMsg.includes(key)) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; resp = chatResponses[key];
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; break;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; botMsg.textContent = resp;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.appendChild(botMsg);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.scrollTop = chatMessages.scrollHeight;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 800);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; chatMessages.scrollTop = chatMessages.scrollHeight;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function handleKeyPress(event) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (event.key === 'Enter') {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; sendMessage();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function openResource(type) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const msgs = {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'academic': 'Academic Support: Access tutoring sessions, study groups, and connect with academic advisors. Book your session now!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'mental': 'Mental Health Resources: Free counseling available. Crisis hotline: 1-800-XXX-XXXX. Virtual support groups meet Wednesdays at 5 PM.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'career': 'Career Services: Resume building, mock interviews, and job placement assistance. 200+ company partnerships for internships.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'financial': 'Financial Aid: Explore scholarships, grants, and financial assistance programs. Apply before December 1st for spring semester.',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'campus': 'Campus Navigation: Click the Campus Map button to view the interactive map!',
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 'community': 'Community Connect: Join study groups and connect with peers who share your academic interests and goals.'
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; };
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification(msgs[type]);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function showNotification(msg) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const existing = document.querySelector('.notification-badge');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (existing) existing.remove();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const notif = document.createElement('div');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; notif.className = 'notification-badge';
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; notif.textContent = msg;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.body.appendChild(notif);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setTimeout(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; notif.remove();
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 4000);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function initMap() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const center = { lat: 12.9716, lng: 77.5946 };
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; map = new google.maps.Map(document.getElementById('map'), {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; center: center,
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; zoom: 16
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const locs = [
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Main Building', position: { lat: 12.9716, lng: 77.5946 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Room 304', position: { lat: 12.9720, lng: 77.5950 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Library', position: { lat: 12.9712, lng: 77.5940 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Cafeteria', position: { lat: 12.9718, lng: 77.5935 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Mental Health Center', position: { lat: 12.9710, lng: 77.5955 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Career Services', position: { lat: 12.9722, lng: 77.5945 } },
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; { name: 'Student Center', position: { lat: 12.9714, lng: 77.5952 } }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; ];
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; locs.forEach(function(loc) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const marker = new google.maps.Marker({
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; position: loc.position,
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; map: map,
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; title: loc.name
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const info = new google.maps.InfoWindow({
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; content: '&lt;div style="padding:10px;"&gt;&lt;strong&gt;' + loc.name + '&lt;/strong&gt;&lt;/div&gt;'
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; marker.addListener('click', function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; info.open(map, marker);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; markers.push(marker);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function openMap() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('mapModal').classList.add('active');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (map) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; google.maps.event.trigger(map, 'resize');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; function closeMap() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; document.getElementById('mapModal').classList.remove('active');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setInterval(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const streak = document.getElementById('currentStreak');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; const curr = parseInt(streak.textContent);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; if (Math.random() &gt; 0.95) {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; streak.textContent = curr + 1;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 10000);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; window.addEventListener('load', function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; setTimeout(function() {
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; showNotification('Welcome back! You have 2 new messages and 1 upcoming event today.');
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; }, 1000);
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; });
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;&#xa0;&#xa0; &lt;/script&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/body&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&lt;/html&gt;
+			</p>
+			<p style="margin-top:0pt; margin-bottom:8pt">
+				&#xa0;
+			</p>
+	<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converted to HTML with WordToHTML.net</a><span style="font-size:11px; color: #d0d0d0"> | </span><a href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Document Converter for Windows</a></p>
